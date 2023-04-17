@@ -3,7 +3,7 @@ package Node;
 import unit4.collectionsLib.Node;
 
 @SuppressWarnings("unused")
-public class size_list {
+public class list_size {
 
     public static <T> int size1(Node<T> lst) {
         int count = 0;

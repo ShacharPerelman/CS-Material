@@ -1,2 +1,4 @@
-package Queue;public class sort_queue {
+package Queue;
+
+public class sort_queue {
 }

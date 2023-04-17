@@ -2,7 +2,7 @@ package BinNode;
 
 import unit4.collectionsLib.BinNode;
 
-public class search_tree {
+public class print_tree {
 
     public static <T> String preorder(BinNode<T> tree) {
         if (tree == null)

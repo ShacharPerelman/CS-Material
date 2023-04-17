@@ -1,2 +1,4 @@
-package Node;public class sort_list {
+package Node;
+
+public class sort_list {
 }

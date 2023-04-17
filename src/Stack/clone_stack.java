@@ -1,2 +1,4 @@
-package Stack;public class clone_stack {
+package Stack;
+
+public class clone_stack {
 }

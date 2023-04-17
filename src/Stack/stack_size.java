@@ -1,2 +1,4 @@
-package Stack;public class stack_size {
+package Stack;
+
+public class stack_size {
 }
