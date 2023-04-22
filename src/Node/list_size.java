@@ -7,7 +7,7 @@ public class list_size {
 
     public static <T> int size1(Node<T> lst) {
         int count = 0;
-        for (Node<T> curr = lst; curr != null; curr = curr.getNext())
+        for (Node<T> curr = lst; curr.hasNext(); curr = curr.getNext())
             count++;
         return count;
     }
@@ -16,7 +16,7 @@ public class list_size {
         Node<T> curr = lst;
         int count = 0;
 
-        while(curr != null){
+        while(curr.hasNext()){
             count++;
             curr = curr.getNext();
         }
