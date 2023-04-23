@@ -2,10 +2,10 @@ package Node;
 
 import unit4.collectionsLib.Node;
 
-public class print_list {
+public class print_list { // Verified
 
     public static <T> void printList1(Node<T> lst) {
-        for (Node<T> curr = lst; curr.hasNext(); curr = curr.getNext())
+        for (Node<T> curr = lst; curr != null; curr = curr.getNext())
             System.out.print(curr + "  ");
         System.out.println();
     }
@@ -24,7 +24,7 @@ public class print_list {
         System.out.print("[");
 
         Node<T> iter = lst;
-        for (; iter.getNext().hasNext(); iter = iter.getNext())
+        for (; iter.hasNext(); iter = iter.getNext())
             System.out.print(iter.getValue() + ", ");
 
         System.out.print(iter.getValue() + "]\n");

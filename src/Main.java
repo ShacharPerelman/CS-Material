@@ -1,14 +1,35 @@
-import unit4.collectionsLib.*;
+import Node.print_list;
+import Node.sort_list;
 
 import Queue.queue_size;
+
 import Stack.stack_size;
+
+import unit4.collectionsLib.Node;
+import unit4.collectionsLib.Queue;
+import unit4.collectionsLib.Stack;
 
 public class Main {
     public static void main(String[] args) {
 
+         nodeTest();
         // queueTest();
         // stackTest();
 
+    }
+
+    public static void nodeTest() {
+        Node<Integer> lst =
+                new Node<>(0,
+                new Node<>(1,
+                new Node<>(2,
+                new Node<>(11,
+                new Node<>(4,
+                new Node<>(5,
+                new Node<>(10)))))));
+
+        print_list.printList3(lst);
+        print_list.printList3(sort_list.sort3(lst));
     }
 
     public static void queueTest() {

@@ -2,13 +2,14 @@ package Node;
 
 import unit4.collectionsLib.Node;
 
-public class reverse_list {
+public class reverse_list { // Verified
 
     public static <T> Node<T> reverse1(Node<T> lst){
         Node<T> rev = null;
 
         for (Node<T> iter = lst; iter != null; iter = iter.getNext())
-            rev = new Node<T>(iter.getValue(), rev);
+            rev = new Node<>(iter.getValue(), rev);
+
         return rev;
     }
 
